@@ -48,9 +48,9 @@
     },
     {
       "label": "generate docs",
-      "command": ".venv/bin/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
+      "command": ".venv/bin/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs/html",
       "windows": {
-        "command": ".venv/Scripts/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs"
+        "command": ".venv/Scripts/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs/html"
       },
       "type": "shell",
       "presentation": {
@@ -63,7 +63,7 @@
     },
     {
       "label": "open docs index.html",
-      "command": "${workspaceFolder}/build/docs/index.html",
+      "command": "${workspaceFolder}/build/docs/html/index.html",
       "type": "shell",
       "presentation": {
         "reveal": "always"

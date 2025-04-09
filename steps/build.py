@@ -23,6 +23,24 @@ class RunPytest(PipelineStep):
         pass
 
 
+class RunPreCommit(PipelineStep):
+    def run(self) -> None:
+        logger.info(f"{self.get_name()}")
+        self.execution_context.create_process_executor(["poetry", "run", "pre-commit", "run", "--all-files"]).execute()
+
+    def get_inputs(self) -> List[Path]:
+        return []
+
+    def get_outputs(self) -> List[Path]:
+        return []
+
+    def get_name(self) -> str:
+        return self.__class__.__name__
+
+    def update_execution_context(self) -> None:
+        pass
+
+
 class GenerateDocs(PipelineStep):
     def run(self) -> None:
         logger.info(f"{self.get_name()}")

@@ -10,6 +10,6 @@ main_branch: develop
 open_source_license: MIT
 package_name: sple_artifacts_uploader
 project_name: SPLE Artifacts Uploader
-project_short_description: ''
+project_short_description: 'Configurable and automatable uploader for artifacts.'
 project_slug: sple-artifacts-uploader
 

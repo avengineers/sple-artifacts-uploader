@@ -30,7 +30,7 @@
   <img src="https://img.shields.io/pypi/l/sple-artifacts-uploader.svg?style=flat-square" alt="License">
 </p>
 
-
+Configurable and automatable uploader for artifacts.
 
 ## Installation
 

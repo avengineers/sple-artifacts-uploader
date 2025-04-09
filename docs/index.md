@@ -13,17 +13,16 @@ title: SPLE Artifacts Uploader
 ```{image} ./_static/python-logo-only.svg
 :width: 150px
 ```
+
 :::
 
 :::{grid-item}
 :columns: 8
 :class: sd-fs-3
 
-
 :::
 
 ::::
-
 
 ---
 
@@ -35,7 +34,6 @@ getting_started/index.md
 features/index.md
 internals/index.md
 ```
-
 
 ```{toctree}
 :hidden:
