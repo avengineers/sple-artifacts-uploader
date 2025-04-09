@@ -2,37 +2,22 @@
 
 ## Design
 
-Add here some documentation for your design.
+To be documented
 
-```{mermaid} figures/design.mmd
-```
-
-
-## MyApp
+## SPLE Artifacts Uploader Details
 
 ### Requirements
 
-```{item} REQ-MY_APP_PROJECT_DIR-0.0.1 External project path
-   :status: Approved
+```{item} REQ-ARTIFACTS-UPLOADER-1.0 Upload artifacts
+   :status: Done
 
-   It **shall** support projects directories which are not the current directory.
-   The application shall not expect that the project directory is the current directory.
-```
-
-```{item} REQ-MY_APP_LOGGING-0.0.1 Create log file
-   :status: Not implemented
-
-   It **shall** generate a log file and overwrite it for every run.
-   This will ease debugging the application in production.
-   The user can attach the log file to the bug report.
+   The artifacts uploader **shall** upload files to a remote server.
 ```
 
 ### Reports
 
-
-
 ```{item-matrix} Trace requirements to implementation
-    :source: REQ-MY_APP
+    :source: REQ-ARTIFACTS-UPLOADER
     :target: IMPL
     :sourcetitle: Requirement
     :targettitle: Implementation
@@ -40,13 +25,13 @@ Add here some documentation for your design.
 ```
 
 ```{item-piechart} Implementation coverage chart
-    :id_set: REQ-MY_APP IMPL
+    :id_set: REQ-ARTIFACTS-UPLOADER IMPL
     :label_set: Not implemented, Implemented
     :sourcetype: fulfilled_by
 ```
 
 ```{item-matrix} Requirements to test case description traceability
-    :source: REQ-MY_APP
+    :source: REQ-ARTIFACTS-UPLOADER
     :target: "[IU]TEST"
     :sourcetitle: Requirements
     :targettitle: Test cases
@@ -57,10 +42,8 @@ Add here some documentation for your design.
 
 ### API
 
-Add here some documentation for your class.
-
 ```{eval-rst}
-.. autoclass:: sple_artifacts_uploader.my_app::MyApp
+.. autoclass:: sple_artifacts_uploader.artifact_uploader::ArtifactUploader
    :members:
    :undoc-members:
 ```
@@ -68,7 +51,7 @@ Add here some documentation for your class.
 ## Testing
 
 ```{eval-rst}
-.. automodule:: test_my_app
+.. automodule:: test_artifact_uploader
    :members:
    :show-inheritance:
 ```

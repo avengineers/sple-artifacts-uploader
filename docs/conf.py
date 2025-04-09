@@ -47,6 +47,9 @@ myst_enable_extensions = [
 
 # mermaid config - @see https://pypi.org/project/sphinxcontrib-mermaid/
 extensions.append("sphinxcontrib.mermaid")
+mermaid_init_js = """mermaid.initialize({
+  theme: 'dark',
+});"""
 
 # Configure extensions for include doc-strings from code
 extensions.extend(
@@ -76,11 +79,15 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # copy button for code block
 extensions.append("sphinx_copybutton")
 
+# open links in new tab
+extensions.append("sphinx_new_tab_link")
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_book_theme"
-html_logo = "_static/python-logo-only.svg"
+html_logo = ""
+html_favicon = ""
 html_theme_options = {
     "home_page_in_toc": True,
     "github_url": "https://github.com/Avengineers/sple-artifacts-uploader",
@@ -97,3 +104,4 @@ html_static_path = [
     os.path.join(os.path.dirname(mlx.traceability.__file__), "assets"),
     "_static",
 ]
+html_css_files = ["custom.css"]

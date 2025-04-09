@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sple-artifacts-uploader"
 version = "0.0.0"
-description = ""
+description = "Configurable and automatable uploader for artifacts."
 authors = ["Avengineers <karsten.guenther@kamg.de>"]
 license = "MIT"
 readme = "README.md"
@@ -24,6 +24,7 @@ packages = [{ include = "sple_artifacts_uploader", from = "src" }]
 python = ">=3.10,<3.14"
 py-app-dev = "^2.1.0"
 typer = "^0.12.3"
+requests = "^2.32.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
@@ -49,7 +50,7 @@ version_variables = [
     "src/sple_artifacts_uploader/__init__.py:__version__",
     "docs/conf.py:release",
 ]
-build_command = "poetry build"
+build_command = "pip install poetry && poetry build"
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = ["chore*", "ci*"]
@@ -93,6 +94,7 @@ lint.ignore = [
     "D104", # Missing docstring in public package
     "D107", # Missing docstring in `__init__`
     "D401", # First line of docstring should be in imperative mood
+    "D407", # Missing dashed underline after section
 ]
 lint.select = [
     "B",   # flake8-bugbear

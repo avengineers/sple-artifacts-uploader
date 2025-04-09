@@ -1,10 +1,34 @@
 {
-  "python.testing.pytestArgs": ["tests"],
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "editor.formatOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "cSpell.words": [
+    "sple"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#03df78",
+    "activityBar.background": "#03df78",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#b5b7b8",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#03df78",
+    "statusBar.background": "#03df78",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#03df78",
+    "statusBarItem.remoteBackground": "#03df78",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#03df78",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#03df7885",
+    "titleBar.inactiveForeground": "#15202b99"
+  }
 }
