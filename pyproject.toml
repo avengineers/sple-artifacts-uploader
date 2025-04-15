@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sple-artifacts-uploader"
-version = "0.0.0"
+version = "0.1.0"
 description = "Configurable and automatable uploader for artifacts."
 authors = ["Avengineers <karsten.guenther@kamg.de>"]
 license = "MIT"
