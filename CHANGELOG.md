@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2025-04-22)
+
+### Fix
+
+* fix: remove bootstrap script and update build process ([`b93f5b3`](https://github.com/avengineers/sple-artifacts-uploader/commit/b93f5b39a44018fdaf50d6dbed9049a7d459d980))
+
+
 ## v0.1.0 (2025-04-15)
 
 ### Feature
